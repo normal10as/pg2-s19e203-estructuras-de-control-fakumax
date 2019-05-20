@@ -4,6 +4,6 @@ Imports System
 'valores: 3,7,12,5,9 informar: “El tercer número es el mayor valor”.
 Module Tercero
     Sub Main(args As String())
-        Console.WriteLine("Hello World!")
+        Console.WriteLine("Hello Worl!")
     End Sub
 End Module
