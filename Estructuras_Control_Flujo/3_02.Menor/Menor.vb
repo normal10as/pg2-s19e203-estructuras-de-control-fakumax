@@ -3,20 +3,24 @@ Imports System
 'el menor.
 Module Menor
     Sub Main(args As String())
-        Console.WriteLine("El resultado menor es : " & menor())
+        Dim valor1 As UShort = datoIngresado()
+        Dim valor2 As UShort = datoIngresado()
+        Dim valor3 As UShort = datoIngresado()
+        Console.WriteLine(menor(valor1, valor2, valor3))
     End Sub
-    Function menor() As String
-        Dim menorValor As Integer
-        Dim valor(2) As Integer
-        For x = 0 To 2
-            Console.WriteLine("Ingrese el valor '{0}' : ", x + 1)
-            valor(x) = Console.ReadLine
-            If x = 0 Then
-                menorValor = valor(0)
-            ElseIf valor(x) < menorValor Then
-                menorValor = valor(x)
-            End If
-        Next
-        Return menorValor
+    Function menor(ByRef a, ByRef b, ByRef c) As String
+        If (a < b) And (a < c) Then
+            Return "El menor valor es " & a
+        ElseIf (b < a) And (b < c) Then
+            Return "El menor valor es " & b
+        ElseIf a = b And b = c Then
+            Return "Los valores son iguales " & a
+        Else
+            Return "El menor valor es el " & c
+        End If
+    End Function
+    Function datoIngresado() As Integer
+        Console.WriteLine("Ingrese un valor :")
+        Return Console.ReadLine
     End Function
 End Module
