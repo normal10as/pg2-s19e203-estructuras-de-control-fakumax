@@ -5,6 +5,32 @@ Imports System
 'pares o todos son impares informar esta situación particular en lugar de la consigna anterior.
 Module ParesImpares
     Sub Main(args As String())
-        Console.WriteLine("Hello World!")
+        Dim valor, par, impar As UInteger
+        Do
+            Console.Write("Ingrese un número : ")
+            valor = Console.ReadLine
+            If valor = 0 Then
+                Exit Do
+            ElseIf valor > 0 Then
+                parImpar(valor, par, impar)
+            Else
+                Console.WriteLine("Ingrese un valor positivo.")
+            End If
+        Loop While True
+        If impar = 0 Then
+            Console.WriteLine("Todos los numeros son pares.")
+        ElseIf par = 0 Then
+            Console.WriteLine("Todos los números son impares.")
+        Else
+            Console.WriteLine("Los pares son : " & par)
+            Console.WriteLine("Los impares son : " & impar)
+        End If
+    End Sub
+    Sub parImpar(valor As Integer, ByRef par As Integer, ByRef impar As Integer)
+        If valor Mod 2 = 0 Then
+            par += 1
+        Else
+            impar += 1
+        End If
     End Sub
 End Module
