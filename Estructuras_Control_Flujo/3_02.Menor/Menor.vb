@@ -1,5 +1,5 @@
 Imports System
-'3.2. Crear un proyecto y un mÛdulo ìMenorî para resolver con IF: ingresar tres valores y mostrar
+'3.2. Crear un proyecto y un m√≥dulo ‚ÄúMenor‚Äù para resolver con IF: ingresar tres valores y mostrar
 'el menor.
 Module Menor
     Sub Main(args As String())
@@ -8,7 +8,7 @@ Module Menor
         Dim valor3 As UShort = datoIngresado()
         Console.WriteLine(menor(valor1, valor2, valor3))
     End Sub
-    Function menor(ByRef a, ByRef b, ByRef c) As String
+    Function menor(ByRef a As Integer , ByRef b As Integer, ByRef c As Integer) As String
         If (a < b) And (a < c) Then
             Return "El menor valor es " & a
         ElseIf (b < a) And (b < c) Then
