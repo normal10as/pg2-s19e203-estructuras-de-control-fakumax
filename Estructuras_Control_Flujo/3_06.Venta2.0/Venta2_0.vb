@@ -12,25 +12,24 @@ Module Venta2_0
         impresion(cantidad, precio)
     End Sub
     Sub impresion(cantidad As UShort, precio As Single)
-            Dim total As Decimal = cantidad * precio
-            Dim porciento As Single = porcentaje(cantidad)
-            Console.WriteLine(vbTab & "VENTA")
-            Console.WriteLine("Subtotal :  $" & total)
-            Console.WriteLine("Descuento : '{0}'%", porciento * 100)
-            Console.WriteLine("A descontar : ${0} ", total * porciento)
-            Console.WriteLine("TOTAL : ${0}", total - (total * porciento))
-
-        End Sub
-    Function porcentaje(cantidad) As Single
+        Dim total As Decimal = cantidad * precio
+        Dim porciento As Single = porcentaje(cantidad)
+        Console.WriteLine(vbTab & "VENTA")
+        Console.WriteLine("Subtotal :  $" & total)
+        Console.WriteLine("Descuento : '{0}'%", porciento)
+        Console.WriteLine("A descontar : ${0} ", total * porciento / 100)
+        Console.WriteLine("TOTAL : ${0}", total - (total * (porciento / 100)))
+    End Sub
+    Function porcentaje(cantidad As UShort) As UShort
         Select Case cantidad
-            Case 10 To 50
-                Return 0.05
-            Case 51 To 250
-                Return 0.1
-            Case > 250
-                Return 0.2
-            Case Else
+            Case < 10
                 Return 0
+            Case <= 50
+                Return 5
+            Case <= 250
+                Return 10
+            Case Else
+                Return 20
         End Select
     End Function
 End Module

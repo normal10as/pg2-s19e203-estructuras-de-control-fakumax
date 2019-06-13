@@ -14,11 +14,13 @@ Module ConversionMedidas
         Dim opcion As Byte
         Do While True
             opcion = menu()
-            If opcion = 5 Then
+            If opcion = 6 Then
                 Exit Do
-            ElseIf opcion > 1 Or opcion < 5 Then
+            ElseIf opcion > 1 Or opcion < 6 Then
                 Console.Write("Ingrese el valor : ")
                 valor = Console.ReadLine
+                'Console.Clear()
+                'Console.WriteLine()
                 Select Case opcion
                     Case 1
                         pie(valor)
@@ -43,8 +45,8 @@ Module ConversionMedidas
         Console.WriteLine("2) Pulgadas")
         Console.WriteLine("3) Yarda")
         Console.WriteLine("4) Centimetros")
-        Console.WriteLine("4) Metros")
-        Console.WriteLine("5) SALIR")
+        Console.WriteLine("5) Metros")
+        Console.WriteLine("6) SALIR")
         Console.Write(vbLf & "Opción : ")
         Return Console.ReadLine
     End Function

@@ -20,20 +20,20 @@ Module Venta
         Dim porciento As Single = porcentaje(cantidad)
         Console.WriteLine(vbTab & "VENTA")
         Console.WriteLine("Subtotal :  $" & total)
-        Console.WriteLine("Descuento : '{0}'%", porciento * 100)
-        Console.WriteLine("A descontar : ${0} ", total * porciento)
-        Console.WriteLine("TOTAL : ${0}", total - (total * porciento))
+        Console.WriteLine("Descuento : '{0}'%", porciento)
+        Console.WriteLine("A descontar : ${0} ", total * (porciento / 100))
+        Console.WriteLine("TOTAL : ${0}", total - (total * (porciento / 100)))
 
     End Sub
-    Function porcentaje(cantidad) As Single
-        If cantidad > 9 And cantidad < 51 Then
-            Return 0.05
-        ElseIf cantidad > 50 And cantidad < 251 Then
-            Return 0.1
-        ElseIf cantidad > 250 Then
-            Return 0.2
-        Else
+    Function porcentaje(cantidad As UShort) As UShort
+        If cantidad < 10 Then
             Return 0
+        ElseIf cantidad <= 50 Then
+            Return 5
+        ElseIf cantidad <= 250 Then
+            Return 10
+        Else
+            Return 20
         End If
     End Function
 End Module

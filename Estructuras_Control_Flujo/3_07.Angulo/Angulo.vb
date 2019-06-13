@@ -20,11 +20,11 @@ Module Angulo
                 Return "聲gulo Agudo"
             Case 90
                 Return "聲gulo Recto"
-            Case 90 To 179
+            Case <= 179
                 Return "聲gulo Obtuso"
             Case 180
                 Return "聲gulo Llano"
-            Case 181 To 359
+            Case <= 359
                 Return "聲gulo C鏮cavo"
             Case 360
                 Return "聲gulo Completo"
