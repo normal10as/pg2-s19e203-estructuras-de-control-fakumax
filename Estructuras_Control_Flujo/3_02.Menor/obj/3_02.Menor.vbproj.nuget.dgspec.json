@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj": {}
+    "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj": {
+    "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj",
+        "projectUniqueName": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj",
         "projectName": "3_02.Menor",
-        "projectPath": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj",
+        "projectPath": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\3_02.Menor.vbproj",
         "packagesPath": "C:\\Users\\n0mak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\obj\\",
+        "outputPath": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_02.Menor\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

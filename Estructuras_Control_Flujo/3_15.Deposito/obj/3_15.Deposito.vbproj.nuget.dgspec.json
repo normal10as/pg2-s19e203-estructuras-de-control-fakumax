@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj": {}
+    "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj": {
+    "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj",
+        "projectUniqueName": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj",
         "projectName": "3_15.Deposito",
-        "projectPath": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj",
+        "projectPath": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\3_15.Deposito.vbproj",
         "packagesPath": "C:\\Users\\n0mak\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\n0mak\\Source\\Repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\obj\\",
+        "outputPath": "C:\\Users\\n0mak\\source\\repos\\normal10as\\pg2-s19e203-estructuras-de-control-fakumax\\Estructuras_Control_Flujo\\3_15.Deposito\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
