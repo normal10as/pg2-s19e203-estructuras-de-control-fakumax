@@ -20,7 +20,27 @@ Imports System
 'SALDO: es el el capital sumado el interés.
 'TOTAL INTERES GANADO: es la sumatoria de los intereses mensuales.
 Module Deposito
+    Private Const interesAnual As Byte = 36
     Sub Main(args As String())
-        Console.WriteLine("Hello World!")
+        Dim capital As Single
+        Dim cantidadMeses As UShort
+        Console.WriteLine("Ingrese el capital inicial :")
+        capital = Console.ReadLine
+        Console.WriteLine("Ingrese cantidad de meses :")
+        cantidadMeses = Console.ReadLine
+        Reporte(capital, cantidadMeses)
+
     End Sub
+    Function Reporte(capital As Single, cantidadMeses As UShort)
+        'MES CAPITAL INTERES SALDO
+        '1 99,999.99 99,999.99 99,999.99
+        Console.WriteLine(vbTab & "MES" & vbTab & "CAPITAL " & vbTab & "INTERES" & vbTab & "SALDO")
+        For mes = 1 To cantidadMeses - 1
+            imprimeReporte(mes)
+        Next
+
+    End Function
+    Function imprimeReporte(mes As UShort)
+        Console.WriteLine("{0} - ", mes)
+    End Function
 End Module
