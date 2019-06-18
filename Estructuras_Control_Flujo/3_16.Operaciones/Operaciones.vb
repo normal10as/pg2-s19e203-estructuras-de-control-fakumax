@@ -43,10 +43,10 @@ Module Operaciones
         End Select
     End Function
     Function calcula(operador As operadores, valor1 As Single, valor2 As Single, valor3 As Single) As Single
-        Return calcula(operador, valor1, calcula(operador, valor2, valor3))
+        Return calcula(operador, calcula(operador, valor1, valor2), valor3)
     End Function
     Function calcula(operador As operadores, valor1 As Single, valor2 As Single, valor3 As Single, valor4 As Single) As Single
-        Return calcula(calcula(operador, valor1, valor2), calcula(operador, valor3, valor4))
+        Return calcula(operador, calcula(operador, valor1, valor2, valor3), valor4)
     End Function
     Function calcula(valor1 As Single, valor2 As Single) As Single
         Return valor1 + valor2
