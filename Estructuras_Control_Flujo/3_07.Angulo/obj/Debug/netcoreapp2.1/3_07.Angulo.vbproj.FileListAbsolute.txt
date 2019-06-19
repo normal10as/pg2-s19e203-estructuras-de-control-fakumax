@@ -8,4 +8,3 @@ C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakuma
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_07.Angulo\obj\Debug\netcoreapp2.1\3_07.Angulo.AssemblyInfo.vb
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_07.Angulo\obj\Debug\netcoreapp2.1\3_07.Angulo.dll
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_07.Angulo\obj\Debug\netcoreapp2.1\3_07.Angulo.pdb
-C:\Users\n0mak\Source\Repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_07.Angulo\obj\Debug\netcoreapp2.1\3_07.Angulo.vbprojAssemblyReference.cache

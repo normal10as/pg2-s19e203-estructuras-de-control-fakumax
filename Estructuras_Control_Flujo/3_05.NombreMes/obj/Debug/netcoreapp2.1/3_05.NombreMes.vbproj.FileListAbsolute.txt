@@ -8,4 +8,3 @@ C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakuma
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_05.NombreMes\obj\Debug\netcoreapp2.1\3_05.NombreMes.AssemblyInfo.vb
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_05.NombreMes\obj\Debug\netcoreapp2.1\3_05.NombreMes.dll
 C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_05.NombreMes\obj\Debug\netcoreapp2.1\3_05.NombreMes.pdb
-C:\Users\n0mak\source\repos\normal10as\pg2-s19e203-estructuras-de-control-fakumax\Estructuras_Control_Flujo\3_05.NombreMes\obj\Debug\netcoreapp2.1\3_05.NombreMes.vbprojAssemblyReference.cache

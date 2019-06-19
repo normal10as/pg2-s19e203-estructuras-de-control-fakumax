@@ -1,4 +1,5 @@
 Imports System
+Imports System.Math
 '3.15. Crear un proyecto y un módulo “Deposito” para resolver el siguiente planteo: se
 'deposita un capital a un plazo de n meses, con una tasa de interés de 36% anual (es una
 'constante), capitalizable cada mes, es decir, se suman los intereses ganados al capital.
@@ -20,27 +21,35 @@ Imports System
 'SALDO: es el el capital sumado el interés.
 'TOTAL INTERES GANADO: es la sumatoria de los intereses mensuales.
 Module Deposito
-    Private Const interesAnual As Byte = 36
+    'Interes Anual=36%   Mensual 36/12=3
+    Private Const interesMensual As Byte = 3
     Sub Main(args As String())
         Dim capital As Single
         Dim cantidadMeses As UShort
-        Console.WriteLine("Ingrese el capital inicial :")
-        capital = Console.ReadLine
-        Console.WriteLine("Ingrese cantidad de meses :")
-        cantidadMeses = Console.ReadLine
-        Reporte(capital, cantidadMeses)
-
+        depositoDatos(capital, cantidadMeses)
+        Console.WriteLine("TOTAL INTERES GANADO : " & Reporte(capital, cantidadMeses))
     End Sub
-    Function Reporte(capital As Single, cantidadMeses As UShort)
-        'MES CAPITAL INTERES SALDO
-        '1 99,999.99 99,999.99 99,999.99
-        Console.WriteLine(vbTab & "MES" & vbTab & "CAPITAL " & vbTab & "INTERES" & vbTab & "SALDO")
-        For mes = 1 To cantidadMeses - 1
-            imprimeReporte(mes)
+    Sub depositoDatos(ByRef capital As Single, ByRef cantidadMeses As UShort)
+        Console.Write("Ingrese el capital inicial : ")
+        capital = Console.ReadLine
+        Console.Write("Ingrese cantidad de meses : ")
+        cantidadMeses = Console.ReadLine
+    End Sub
+    Function Reporte(capital As Single, cantidadMeses As UShort) As String
+        Dim interesGanado As Decimal
+        Dim total As Decimal
+        Dim interesTotal As Decimal
+        Console.WriteLine("MES" & vbTab & "CAPITAL" & vbTab & "INTERES" & vbTab & "  SALDO")
+        For mes = 1 To cantidadMeses
+            interesGanado = capital / 100 * interesMensual
+            interesTotal += interesGanado
+            total = interesGanado + capital
+            Console.Write("{0}" & vbTab, mes)
+            Console.Write("{0}" & vbTab, Math.Round(capital, 2))
+            Console.Write("{0}" & vbTab, Math.Round(interesGanado, 2))
+            Console.WriteLine("{0}" & vbTab, Math.Round(total, 2))
+            capital += interesGanado
         Next
-
-    End Function
-    Function imprimeReporte(mes As UShort)
-        Console.WriteLine("{0} - ", mes)
+        Return Math.Round(interesTotal, 2)
     End Function
 End Module
